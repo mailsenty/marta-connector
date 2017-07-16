@@ -1,0 +1,137 @@
+{
+  "minMuleVersion": "3.5.0",
+  "requiresEntitlement": false,
+  "requiresEnterpriseLicense": false,
+  "configs": [
+    {
+      "configElementName": "config",
+      "attributes": [
+        {
+          "javaTypeName": "String",
+          "fullQualifiedJavaTypeName": "java.lang.String",
+          "defaultValue": "Hello",
+          "isOptional": true,
+          "isRefOnly": false,
+          "isPayload": false,
+          "isComplexType": false,
+          "isEnum": false,
+          "isString": true,
+          "typeMirror": "java.lang.String",
+          "isHttpCallback": false,
+          "isArrayOrListOrMap": false,
+          "javaName": "greeting",
+          "description": "Greeting message"
+        },
+        {
+          "javaTypeName": "String",
+          "fullQualifiedJavaTypeName": "java.lang.String",
+          "defaultValue": "How are you?",
+          "isOptional": true,
+          "isRefOnly": false,
+          "isPayload": false,
+          "isComplexType": false,
+          "isEnum": false,
+          "isString": true,
+          "typeMirror": "java.lang.String",
+          "isHttpCallback": false,
+          "isArrayOrListOrMap": false,
+          "javaName": "reply",
+          "description": "Reply message"
+        }
+      ],
+      "javaName": "ConnectorConfig",
+      "friendlyName": "Configuration",
+      "type": "ConfigurationConfig"
+    }
+  ],
+  "attributes": [],
+  "processors": [
+    {
+      "isPaged": false,
+      "isBatch": false,
+      "samples": [],
+      "javaReturnType": {
+        "javaTypeName": "String",
+        "fullQualifiedJavaTypeName": "java.lang.String",
+        "isOptional": false,
+        "isRefOnly": false,
+        "isPayload": false,
+        "isComplexType": false,
+        "isEnum": false,
+        "isString": false,
+        "isHttpCallback": false,
+        "description": ""
+      },
+      "parameters": [],
+      "apiDocUrl": "",
+      "javaName": "getAllBus",
+      "friendlyName": "Get all bus",
+      "xsdName": "get-all-bus"
+    },
+    {
+      "isPaged": false,
+      "isBatch": false,
+      "samples": [],
+      "javaReturnType": {
+        "javaTypeName": "String",
+        "fullQualifiedJavaTypeName": "java.lang.String",
+        "isOptional": false,
+        "isRefOnly": false,
+        "isPayload": false,
+        "isComplexType": false,
+        "isEnum": false,
+        "isString": false,
+        "isHttpCallback": false,
+        "description": ""
+      },
+      "parameters": [
+        {
+          "javaTypeName": "String",
+          "fullQualifiedJavaTypeName": "java.lang.String",
+          "isOptional": false,
+          "isRefOnly": false,
+          "isPayload": false,
+          "isComplexType": false,
+          "isEnum": false,
+          "isString": true,
+          "typeMirror": "java.lang.String",
+          "isHttpCallback": false,
+          "isArrayOrListOrMap": false,
+          "javaName": "route"
+        }
+      ],
+      "apiDocUrl": "",
+      "javaName": "getBusByRoute",
+      "friendlyName": "Get bus by route",
+      "xsdName": "get-bus-by-route"
+    },
+    {
+      "isPaged": false,
+      "isBatch": false,
+      "samples": [],
+      "javaReturnType": {
+        "javaTypeName": "String",
+        "fullQualifiedJavaTypeName": "java.lang.String",
+        "isOptional": false,
+        "isRefOnly": false,
+        "isPayload": false,
+        "isComplexType": false,
+        "isEnum": false,
+        "isString": false,
+        "isHttpCallback": false,
+        "description": ""
+      },
+      "parameters": [],
+      "apiDocUrl": "",
+      "javaName": "getRealtimeArrivals",
+      "friendlyName": "Get realtime arrivals",
+      "xsdName": "get-realtime-arrivals"
+    }
+  ],
+  "filters": [],
+  "transformers": [],
+  "sources": [],
+  "javaName": "MARTAConnector",
+  "friendlyName": "MARTA",
+  "xsdName": "marta"
+}
